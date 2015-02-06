@@ -2,7 +2,6 @@ require 'rails/generators'
 
 module Foundation
   # module Rails
-  class foundation-modals
     module Generators
       class InstallGenerator < ::Rails::Generators::Base
         source_root File.join(File.dirname(__FILE__), '..', 'templates')
