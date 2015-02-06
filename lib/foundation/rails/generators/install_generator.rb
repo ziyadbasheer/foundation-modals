@@ -2,6 +2,7 @@ require 'rails/generators'
 
 module Foundation
   # module Rails
+  class foundation-modals
     module Generators
       class InstallGenerator < ::Rails::Generators::Base
         source_root File.join(File.dirname(__FILE__), '..', 'templates')
@@ -10,7 +11,7 @@ module Foundation
         class_option :haml, :desc => 'Generate HAML layout instead of erb', :type => :boolean
         class_option :slim, :desc => 'Generate Slim layout instead of erb', :type => :boolean
 
-        def add_assets
+        def add_assetsfoundat
           # rails_ujs breaks, need to incorporate rails-behavior plugin for this to work seamlessly
           # gsub_file "app/assets/javascripts/application#{detect_js_format[0]}", /\/\/= require jquery\n/, ""
           insert_into_file "app/assets/javascripts/application#{detect_js_format[0]}", "#{detect_js_format[1]} require foundation\n", :after => "jquery_ujs\n"
