@@ -4,7 +4,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'foundation/rails/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "foundation-modals"
+  spec.name          = "foundation-rails"
   spec.version       = Foundation::Rails::VERSION
   spec.authors       = ["ZURB"]
   spec.email         = ["foundation@zurb.com"]
